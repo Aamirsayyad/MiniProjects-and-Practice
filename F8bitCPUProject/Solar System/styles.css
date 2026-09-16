@@ -1,0 +1,86 @@
+body{
+    margin:0;
+    background-image: url(Images/Space.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+
+/* container defines coordinate system */
+#container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#sun{
+    height: 81px;      /* 300 × 0.27 */
+    width: 81px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    filter:
+        drop-shadow(0 0 5.4px orange)
+        drop-shadow(0 0 13.5px rgb(239,127,41));
+    border-radius: 50%;
+}
+
+/* IMPORTANT FIX */
+.planet{
+    height: 27px;      /* 100 × 0.27 */
+    width: 27px;
+    position: absolute;
+
+    /* keeps center aligned with JS coordinates */
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+#mercury{
+    height: 13.5px;    /* 50 × 0.27 */
+    width: 13.5px;
+}
+
+#venus,
+#earth{
+    height: 27px;
+    width: 27px;
+}
+
+#mars{
+    height: 13.5px;
+    width: 13.5px;
+}
+
+#jupiter{
+    height: 48.6px;    /* 180 × 0.27 */
+    width: 48.6px;
+}
+
+#saturn{
+    height: 32.4px;    /* 120 × 0.27 */
+    width: 32.4px;
+    overflow: visible;
+}
+
+/* Menu */
+#menu{
+    height: 100px;
+    width: 250px;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+#speed-slider{
+    accent-color: #fd0404;
+}
