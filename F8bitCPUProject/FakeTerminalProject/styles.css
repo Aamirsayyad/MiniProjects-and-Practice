@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body{
+    background-color: hsl(0, 4%, 90%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#terminal-container{
+    
+    display: flex;
+    background-color: black;
+    height: 65%;
+    width: 70%;
+    flex-direction: column;
+}
+#terminal-menu-bar{
+    background-color: white;
+    height: 30px;
+    color:black;
+    display:flex;
+    align-items: center;
+    padding: 0px;
+    user-select: none;
+    
+}
+
+#terminal-name{
+    flex:20;
+    margin-left:10px;
+}
+#minimize, #maximize, #close{
+    flex:1;
+    min-width: 25px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#maximize{
+    background-image: url("icons/maxtomax.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:30%;
+}
+#close{
+    background-image: url("icons/close.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+#minimize:hover, #maximize:hover{
+    background-color: rgb(200, 200, 200);
+}
+#close:hover{
+    transition: ease-in-out 0.3s;
+    background-color: rgb(252, 79, 79);
+}
+
+#terminal-body{
+    color: rgb(249, 153, 220);
+    padding:10px;
+    overflow-y: auto;
+}
+
+input{
+    all:unset;
+    background-color: black;
+    border: none;
+    color: white;
+    width: 95%;
+}
+.done{
+    color:rgb(0, 255, 234);
+}
+.error{
+    color:rgb(241, 3, 3);
+}
+
+#open-terminal-button{
+    display:none;
+    background-color: rgb(87, 86, 86);
+    padding: 10px 20px 10px ;
+    color:white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    user-select: none;
+    transition: 0.2s;
+}
+
+#open-terminal-button:hover{
+    background-color:rgb(3, 3, 3);
+    color:rgb(248, 248, 248);
+    font-size: 1.05rem;
+}
+
+#open-terminal-button:active{
+    background-color:rgb(255, 255, 253);
+    color:black;
+
+}
+
+

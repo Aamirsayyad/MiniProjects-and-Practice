@@ -1,0 +1,64 @@
+body{
+    margin:0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#main-container{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 30px;
+    gap:20px;
+}
+#slides{
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide{
+    display: none;
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    margin: 10px;
+
+}
+.hidden{
+    display: none;
+}
+.currentVisible{
+    display: block;
+}
+#buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap:70px;
+}
+#buttons button{
+    font-size: 2em;
+    border: none;
+    background-color: white;
+    padding:20px 40px;
+    border-radius: 20px;
+}
+#buttons button:hover{
+    background-color: rgb(240, 240, 239);
+}
+#buttons button:active{
+    background-color: rgb(198, 198, 196);
+}
+
